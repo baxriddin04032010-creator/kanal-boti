@@ -1,4 +1,4 @@
-importg asyncio
+import asyncio
 import logging
 import random
 from datetime import datetime
@@ -8,40 +8,27 @@ from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-# === BU YERGA O'Z MA'LUMOTLARINGIZNI YOZING ===
-BOT_TOKEN = "8874351962:AAG0i-3wVofwd0SWeP6hRRPxfJTyOmTUAas"
+BOT_TOKEN = "8874351962:AAG0i-3wVofwd0SWe..."  # Tokeningizni to'liq joylashtiring
 CHANNEL_ID = "@shshshbaxriddinsh"
-ADMIN_ID = 7548485438  # Telegram ID raqamingiz (masalan: 512345678)
+ADMIN_ID = 7548485438
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler(timezone="Asia/Tashkent")
 users = set()
 
-# Turli sohalarga oid boyitilgan ma'lumotlar bazasi
 NEWS_FACTS = [
-    # 🇺🇿 O'zbekiston va Tarixiy Obidalar
     "Samarqanddagi Registon maydonida joylashgan Sherdor madrasasi peshtoqida quyosh va sher tasviri tushirilgan boʻlib, bu islom meʼmorchiligida kam uchraydigan noyob uslubdir.",
     "Buxorodagi Somoniylar maqbarasi Markaziy Osiyoda poydevoridan to gumbazigacha toʻliq pishgan gʻishtdan qurilgan eng qadimiy meʼmoriy obidadir.",
     "Toshkent metropoliteni Markaziy Osiyoda ishga tushirilgan birinchi metro hisoblanadi (1977-yil).",
     "Xivadagi Ichan-Qalʼa toʻliq saqlanib qolgan shaharlar-muzey boʻlib, YUNESKOning Butunjahon merosi roʻyxatiga kiritilgan birinchi obidadir.",
     "Shahrisabzdagi Oqsaroy majmuasi Amir Temur tomonidan qurdirilgan eng muazzam saroy boʻlib, uning ravogʻi oʻz davrida Markaziy Osiyoda eng kattasi boʻlgan.",
-
-    # 📐 Matematika va Fan
     "Buyuk alloma Muhammad al-Xorazmiy nol (0) raqamini matematikaga olib kirgan va 'Algoritm' hamda 'Algebra' fanlariga asos solgan.",
-    "Pi ($\pi$) soni cheksiz davom etadigan davriy boʻlmagan kasr boʻlib, uning raqamlari ketma-ketligida hech qachon takrorlanish boʻlmaydi.",
-    "Aslida asalari inlarining oltiburchak shaklda qurilishi eng kam mum sarflagan holda eng koʻp hajmni egallash imkonini beradi.",
     "Fibonachchi ketma-ketligi (1, 1, 2, 3, 5, 8...) tabiatdagi chigʻanoqlar spiralida va kungaboqar urugʻlarining joylashishida aniq namoyon boʻladi.",
-
-    # 🧬 Biologiya va Tabiat
     "Inson tanasidagi qon tomirlarining umumiy uzunligi taxminan 100,000 kilometrni tashkil etadi — bu Yer sharini ikki yarim marta oʻrab chiqishga yetadi.",
-    "Dunyodagi eng katta tirik organizm koʻk kit emas, balki AQShda joylashgan 'Pando' deb nomlanuvchi yagona ildiz tizimiga ega 40 000 dan ortiq terak daraxtzoridir.",
-    "DNK molekulasi shunday zich joylashganki, agar inson tanasidagi barcha DNK iplari yoyib chiqilsa, ular Quyoshgacha borib-kelish masofasidan ham uzunroq boʻladi.",
-    "Bambuk oʻsimligi dunyodagi eng tez oʻsadigan oʻsimlik boʻlib, baʼzi turlari kuniga 90 santimetrgacha oʻsishi mumkin.",
     "Delfinlar uxlayotganida miyasining faqat bir yarim shari dam oladi, ikkinchi yarmi esa nafas olish va xavfni kuzatish uchun uygʻoq turadi."
 ]
 
-# Majburiy obunani tekshirish
 async def check_sub(user_id: int) -> bool:
     try:
         member = await bot.get_chat_member(chat_id=CHANNEL_ID, user_id=user_id)
@@ -103,3 +90,4 @@ async def main():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     asyncio.run(main())
+yncio.run
