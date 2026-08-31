@@ -8,7 +8,7 @@ from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-BOT_TOKEN = "8874351962:AAG0i-3wVofwd0SWe..."  # Tokeningizni to'liq joylashtiring
+BOT_TOKEN = "8874351962:AAG0i-3wVofwd0SWeP6hRRPxfJTyOmTUAas"  # Tokeningizni to'liq joylashtiring
 CHANNEL_ID = "@shshshbaxriddinsh"
 ADMIN_ID = 7548485438
 
